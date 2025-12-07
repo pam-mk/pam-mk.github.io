@@ -1,6 +1,6 @@
 theme: event
 
-defaultContentLanguage: de
+defaultContentLanguage: en
 languages:
     _merge: deep
     en:
