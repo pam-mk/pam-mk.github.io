@@ -215,26 +215,26 @@ params:
     themes:
         event:
             sessionizeId: 67poir7q
-            title: medicon
+            title: WPA Co-sponsored International Conference for Forensic Psychiatry
             shortTitle:
-            startDate: 2026-01-30
-            endDate: 2026-01-31
+            startDate: 2026-10-15
+            endDate: 2026-10-18
             address:
-                - Medialesson GmbH
-                - Habermehlstraße 15
-                - 75172 Pforzheim
-                - Germany
+                - Hotel Inex
+                - Olgica Conference Center
+                - Ohrid
+                - Republic of North Macedonia
             map:
-                embeddableMapUrl: //umap.openstreetmap.fr/en/map/medialesson-gmbh_1105977?scrollWheelZoom=false
-                viewLargerMapUrl: //umap.openstreetmap.fr/en/map/medialesson-gmbh_1105977
+                embeddableMapUrl: https://www.openstreetmap.org/export/embed.html?bbox=20.788139104843143%2C41.07989300299249%2C20.806506872177128%2C41.08946770737708&amp;layer=mapnik&amp;marker=41.08467267918627%2C20.79731230478751
+                viewLargerMapUrl: https://www.openstreetmap.org/?mlat=41.08517&mlon=20.79755#map=15/41.08517/20.79754
                 # Link to edit the map: https://umap.openstreetmap.fr/en/map/anonymous-edit/1105977:HjtVVnbwCn6Yi3O02DTPnspzuyoHvP_Kn-M9rE53eE8
             callToAction:
                 eventbrite:
                     eventId: 976108886957
             socialLinks:
-                xUrl: https://x.com/medialesson
-                facebookUrl: https://www.facebook.com/medialesson/
-                linkedinUrl: https://de.linkedin.com/company/medialesson-gmbh
+                #xUrl: https://x.com/medialesson
+                #facebookUrl: https://www.facebook.com/medialesson/
+                #linkedinUrl: https://de.linkedin.com/company/medialesson-gmbh
             images:
                 logo: logos/medicon-512.webp
                 titleBackground: images/pexels-caleboquendo-3023317.webp
