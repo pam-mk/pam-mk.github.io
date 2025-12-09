@@ -103,110 +103,110 @@ languages:
                         ### Additional Info
                         - We bring together diverse expertise and innovation.
 
-    de:
-        disabled: false
-        menus:
-            main:
-                - identifier: about
-                  pageRef: /about
-                  weight: 10
-                - identifier: sessions
-                  pageRef: /sessions
-                  weight: 20
-                - identifier: speakers
-                  pageRef: /speakers
-                  weight: 30
-                - identifier: location
-                  pageRef: /location
-                  weight: 40
-                - identifier: sponsors
-                  pageRef: /sponsors
-                  weight: 50
-                - identifier: code_of_conduct
-                  pageRef: /code-of-conduct
-                  weight: 60
-            footer:
-                - identifier: imprint
-                  pageRef: /imprint
-                  weight: 10
-                - identifier: privacy
-                  pageRef: /privacy-policy
-                  weight: 20
-            secondary:
-                - identifier: about
-                  pageRef: /about
-                  weight: 10
-                  params:
-                      description: |
-                          Erfahren Sie mehr über unsere Mission, Werte und die Menschen hinter unserer Organisation.
-                          Die Seite „Über uns“ bietet Einblicke, wer wir sind, was wir tun
-                          und warum wir leidenschaftlich an unserer Arbeit interessiert sind.
-                - identifier: speakers
-                  pageRef: /speakers
-                  weight: 30
-                  params:
-                      description: |
-                          Lernen Sie unsere herausragenden Referenten kennen, die ihr Fachwissen mit uns teilen werden.
-                          Erfahren Sie mehr über ihre Hintergründe und was sie besprechen werden.
-                - identifier: location
-                  pageRef: /location
-                  weight: 40
-                  params:
-                      description: |
-                          Finden Sie heraus, wo die Veranstaltung stattfindet.
-                          Dieser Abschnitt bietet Informationen zum Veranstaltungsort,
-                          zu Anfahrtsbeschreibungen und zu nahegelegenen Unterkünften.
-                - identifier: code_of_conduct
-                  pageRef: /code-of-conduct
-                  weight: 60
-                  params:
-                      description: |
-                          Lesen Sie die Verhaltensregeln für unsere Veranstaltung.
-                          Dieser Abschnitt beschreibt die Erwartungen an das Verhalten der Teilnehmer
-                          und die Veranstaltungsrichtlinien.
-        params:
-            # Open Graph / X (Twitter) Cards
-            description: |
-                Eine Demo-Website die das Thema "Event" für den statischen
-                Website-Generator HUGO vorstellt.
-            themes:
-                event:
-                    slogan: Keine echte Konferenz - nur eine Demo!
-                    location: Pforzheim
-                    description: |
-                        Dies ist eine Demo-Website, um die Funktionen des Thema __Event__
-                        für den statischen Website-Generator [Hugo](https://gohugo.io)
-                        vorzustellen. Der Quellcode dieser Website steht auf
-                        [GitHub](https://github.com/medialesson/hugo-theme-event-demo)
-                        bereit. Das Thema kann Daten einer beliebigen Veranstaltung von
-                        [Sessionize](https://sessionize.com) abrufen und generiert
-                        automatisch einen Zeitplan, eine Rednerliste und mehr. Es lässt sich
-                        zudem gut mit [Eventbrite](https://www.eventbrite.com) integrieren,
-                        um Tickets zu verkaufen.
-                    directions: |
-                        #### Mit den Öffentlichen:
-                        Nehmen Sie den Bus Nummer 25 vom Stadtzentrum. [Hier klicken für den
-                        Busfahrplan](https://www.kvv.de/en/plan-trip/timetables.html).
-
-                        #### Mit dem Auto:
-                        Fahren Sie vom Stadtzentrum aus 2 Meilen nach Norden auf der Main
-                        Street und biegen Sie dann rechts in die Elm Street ab.
-                        [Wegbeschreibung
-                        abrufen](https://www.kvv.de/en/plan-trip/timetables.html).
-
-                    aboutUs: |
-                        ### Mission
-                        Wir helfen Unternehmen und Organisationen, ihr Geschäft, ihre Produkte und Prozesse durch Beratung, Strategie, Design, Softwareentwicklung und Schulungen mit modernster Technologie digital zu transformieren.
-
-                        ### Gründung
-                        - **2002** - Gegründet
-
-                        ### Unser Team
-                        - **25+** Mitarbeiter
-                        - **5** Nationalitäten
-
-                        ### Zusätzliche Informationen
-                        - Wir vereinen vielfältige Expertise und Innovation.
+#    de:
+#        disabled: false
+#        menus:
+#            main:
+#                - identifier: about
+#                  pageRef: /about
+#                  weight: 10
+#                - identifier: sessions
+#                  pageRef: /sessions
+#                  weight: 20
+#                - identifier: speakers
+#                  pageRef: /speakers
+#                  weight: 30
+#                - identifier: location
+#                  pageRef: /location
+#                  weight: 40
+#                - identifier: sponsors
+#                  pageRef: /sponsors
+#                  weight: 50
+#                - identifier: code_of_conduct
+#                  pageRef: /code-of-conduct
+#                  weight: 60
+#            footer:
+#                - identifier: imprint
+#                  pageRef: /imprint
+#                  weight: 10
+#                - identifier: privacy
+#                  pageRef: /privacy-policy
+#                  weight: 20
+#            secondary:
+#                - identifier: about
+#                  pageRef: /about
+#                  weight: 10
+#                  params:
+#                      description: |
+#                          Erfahren Sie mehr über unsere Mission, Werte und die Menschen hinter unserer Organisation.
+#                          Die Seite „Über uns“ bietet Einblicke, wer wir sind, was wir tun
+#                          und warum wir leidenschaftlich an unserer Arbeit interessiert sind.
+#                - identifier: speakers
+#                  pageRef: /speakers
+#                  weight: 30
+#                  params:
+#                      description: |
+#                          Lernen Sie unsere herausragenden Referenten kennen, die ihr Fachwissen mit uns teilen werden.
+#                          Erfahren Sie mehr über ihre Hintergründe und was sie besprechen werden.
+#                - identifier: location
+#                  pageRef: /location
+#                  weight: 40
+#                  params:
+#                      description: |
+#                          Finden Sie heraus, wo die Veranstaltung stattfindet.
+#                          Dieser Abschnitt bietet Informationen zum Veranstaltungsort,
+#                          zu Anfahrtsbeschreibungen und zu nahegelegenen Unterkünften.
+#                - identifier: code_of_conduct
+#                  pageRef: /code-of-conduct
+#                  weight: 60
+#                  params:
+#                      description: |
+#                          Lesen Sie die Verhaltensregeln für unsere Veranstaltung.
+#                          Dieser Abschnitt beschreibt die Erwartungen an das Verhalten der Teilnehmer
+#                          und die Veranstaltungsrichtlinien.
+#        params:
+#            # Open Graph / X (Twitter) Cards
+#            description: |
+#                Eine Demo-Website die das Thema "Event" für den statischen
+#                Website-Generator HUGO vorstellt.
+#            themes:
+#                event:
+#                    slogan: Keine echte Konferenz - nur eine Demo!
+#                    location: Pforzheim
+#                    description: |
+#                        Dies ist eine Demo-Website, um die Funktionen des Thema __Event__
+#                        für den statischen Website-Generator [Hugo](https://gohugo.io)
+#                        vorzustellen. Der Quellcode dieser Website steht auf
+#                        [GitHub](https://github.com/medialesson/hugo-theme-event-demo)
+#                        bereit. Das Thema kann Daten einer beliebigen Veranstaltung von
+#                        [Sessionize](https://sessionize.com) abrufen und generiert
+#                        automatisch einen Zeitplan, eine Rednerliste und mehr. Es lässt sich
+#                        zudem gut mit [Eventbrite](https://www.eventbrite.com) integrieren,
+#                        um Tickets zu verkaufen.
+#                    directions: |
+#                        #### Mit den Öffentlichen:
+#                        Nehmen Sie den Bus Nummer 25 vom Stadtzentrum. [Hier klicken für den
+#                        Busfahrplan](https://www.kvv.de/en/plan-trip/timetables.html).
+#
+#                        #### Mit dem Auto:
+#                        Fahren Sie vom Stadtzentrum aus 2 Meilen nach Norden auf der Main
+#                        Street und biegen Sie dann rechts in die Elm Street ab.
+#                        [Wegbeschreibung
+#                        abrufen](https://www.kvv.de/en/plan-trip/timetables.html).
+#
+#                    aboutUs: |
+#                        ### Mission
+#                        Wir helfen Unternehmen und Organisationen, ihr Geschäft, ihre Produkte und Prozesse durch Beratung, Strategie, Design, Softwareentwicklung und Schulungen mit modernster Technologie digital zu transformieren.
+#
+#                        ### Gründung
+#                        - **2002** - Gegründet
+#
+#                        ### Unser Team
+#                        - **25+** Mitarbeiter
+#                        - **5** Nationalitäten
+#
+#                        ### Zusätzliche Informationen
+#                        - Wir vereinen vielfältige Expertise und Innovation.
 
 params:
     # Open Graph / X (Twitter) Cards
