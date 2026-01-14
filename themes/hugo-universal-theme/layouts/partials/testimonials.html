@@ -1,0 +1,73 @@
+{{ if isset .Site.Params "testimonials" }}
+{{ if .Site.Params.testimonials.enable }}
+{{ if isset .Site.Data "testimonials" }}
+{{ if gt (len .Site.Data.testimonials) 0 }}
+<section class="bar background-pentagon no-mb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading text-center">
+                    <h2>{{ .Site.Params.testimonials.title }}</h2>
+                </div>
+
+                <p class="lead">
+                  {{ .Site.Params.testimonials.subtitle | markdownify }}
+                </p>
+
+                <!-- *** TESTIMONIALS CAROUSEL *** -->
+
+                <ul class="owl-carousel testimonials same-height-row"
+                    data-items="{{ default 4 .Site.Params.CarouselTestimonials.items }}"
+                    data-autoplay="{{ default false .Site.Params.CarouselTestimonials.auto_play }}"
+                    data-slide-speed="{{ default 2000 .Site.Params.CarouselTestimonials.slide_speed }}"
+                    data-pagination-speed="{{ default 1000 .Site.Params.CarouselTestimonials.pagination_speed }}">
+                    {{ range .Site.Data.testimonials }}
+                    <li class="item">
+                        <div class="testimonial same-height-always">
+                          <!--<a href="{{ .href }}"> -->
+                            <div class="">
+                                <div class="name-picture">
+                                    <img class="" alt="" src="{{ .avatar | absURL }}">
+                                    <h4>{{ .name }}</h4>
+                                    <p><i>{{ .position }}</i></p>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>{{ .short | markdownify }}</p>
+                                <a data-toggle="modal" data-target='{{ (print "#bio-" .id)}}' class="btn btn-primary"> Bio</a>
+                            </div>
+<!--
+                            <div class="modal fade" tabindex="-1" role="dialog" id='{{ (print "bio-" .id) }}'>
+                                <div class="modal-dialog modal-fullscreen" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                      <h4 class="modal-title">{{.name }}</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>{{.bio}}</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                      <button type="button" class="btn btn-primary">Save</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div> -->
+                        </div>
+                    </li>
+                    {{ end }}
+                </ul>
+                <!-- /.owl-carousel -->
+
+                <!-- *** TESTIMONIALS CAROUSEL END *** -->
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- /.bar -->
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}

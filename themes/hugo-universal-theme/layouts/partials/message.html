@@ -1,0 +1,19 @@
+{{ if isset .Site.Params "message" }}
+{{ if .Site.Params.message.enable }}
+{{ if isset .Site.Params "message" }}
+<section class="bar background-gray no-mb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xl-6 col-sm-12">
+                <p class="lead">
+                  {{ .Site.Params.message.message | markdownify }}
+                </p>
+                <p>{{.Site.Params.message.organizator | markdownify }}</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
