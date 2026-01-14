@@ -167,13 +167,11 @@ pluralizelisttitles = false
     logo = "img/logo_white_512.jpeg"
     logo_small = "img/logo_white_64.jpeg"
     contact_url = "/contact"
-    address = """<p class="text-uppercase"><strong>Universal Ltd.</strong>
-        <br>13/25 New Avenue
-        <br>Newtown upon River
-        <br>45Y 73J
-        <br>England
+    address = """<p class="text-uppercase"><strong> Hotel Inex Olgica</strong>
+        <br>Naum Ohridski St. 57
+        <br>Ohrid
         <br>
-        <strong>Great Britain</strong>
+        <strong>Republic of N. Macedonia</strong>
       </p>
       """
 
