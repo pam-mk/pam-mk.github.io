@@ -19,20 +19,6 @@ Phone/Fax: [++389 46 255 600](tel:%2B%2B389%2046%20255%20600)
 **Hotel accomidation**
 {{< include-html "hotel-accomodation.html" >}}
 
-## TRANSPORTATION FROM/TO AIRPORT** UPON REQUEST AND RESERVATION
+## Transport
 
-| Destination from/to | Type of vehicle | Price for one way (euro) | Passengers |
-| --- | --- | --- | --- |
-| Airport Skopje-Hotel Ohrid | &nbsp;    Car | &nbsp;    140 | (3+1) |
-|     | &nbsp;    Van | &nbsp;    200 | (7+1) |
-|     | &nbsp;  Mini bus | &nbsp;    300 | (18+1) |
-
-| Airport Ohrid-Hotel Ohrid | &nbsp;    Car | &nbsp;    30 | (3+1) |
-| --- | --- | --- | --- |
-|     | &nbsp;    Van | &nbsp;    60 | (7+1) |
-|     | &nbsp;  Mini bus | &nbsp;    100 | (18+1) |
-
-| Airport Tirana-Hotel Ohrid | &nbsp;    Car | &nbsp;    160 | (3+1) |
-| --- | --- | --- | --- |
-|     | &nbsp;    Van | &nbsp;    220 | (7+1) |
-|     | &nbsp;  Mini bus | &nbsp;    320 | (18+1) |
+{{< include-html "transportation.html" >}}
