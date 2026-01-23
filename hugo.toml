@@ -80,21 +80,21 @@ pluralizelisttitles = false
     parent     = "menu.registration"
     #post       = 2
 [[menu.main]]
-    name       = "Location"
-    identifier = "menu.location"
-    url        = "/registration/location/"
-    weight     = 2
-    parent     = "menu.registration"
-    #post       = 1
-
-[[menu.main]]
     name       = "Travel & Accomodation"
     identifier = "menu.accomodation"
-    url        = "/registration/accomodation/"
+    url        = "/accomodation/"
     weight     = 3
     parent     = "menu.registration"
     #post       = 2
     #
+
+[[menu.main]]
+    name       = "Location"
+    identifier = "menu.location"
+    url        = "/location/"
+    weight     = 6
+    parent     = ""
+    #post       = 1
 
 [[menu.main]]
     identifier = "contact"
@@ -111,7 +111,7 @@ pluralizelisttitles = false
 
     # Social media
     facebook_site = "" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
-    twitter_site = "GoHugoIO" # the Twitter handle of your site (without the '@')
+    twitter_site = "" # the Twitter handle of your site (without the '@')
     default_sharing_image = "img/sharing-default.png"
 
     # Google Maps widget: If `googleMapsApiKey` is not set, no key will be passed to Google (which likely results in a broken map widget).
