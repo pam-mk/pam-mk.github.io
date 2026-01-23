@@ -80,21 +80,20 @@ pluralizelisttitles = false
     parent     = "menu.registration"
     #post       = 2
 [[menu.main]]
+    name       = "Location"
+    identifier = "menu.location"
+    url        = "/location/"
+    weight     = 2
+    parent     = "menu.registration"
+    #post       = 1
+
+[[menu.main]]
     name       = "Travel & Accomodation"
     identifier = "menu.accomodation"
     url        = "/accomodation/"
     weight     = 3
     parent     = "menu.registration"
-    #post       = 2
-    #
 
-[[menu.main]]
-    name       = "Location"
-    identifier = "menu.location"
-    url        = "/location/"
-    weight     = 6
-    parent     = ""
-    #post       = 1
 
 [[menu.main]]
     identifier = "contact"

@@ -55,6 +55,9 @@ View the abstract topics [here](./topics)
 - Authors will be notified of acceptance and presentation type by email.
 
 ### How to Submit
-Please complete the online abstract submission form and upload your abstract as a Word or PDF file.
+
+Please complete the online abstract submission form and upload your abstract as a Word or PDF file. *CMT submission link will be coming shortly*.
 
 All correspondence will be sent to the corresponding author’s email address.
+
+*The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.*
