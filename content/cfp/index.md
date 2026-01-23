@@ -56,7 +56,7 @@ View the abstract topics [here](/topics/)
 
 ### How to Submit
 
-Please complete the online abstract submission form [using the following link](https://cmt3.research.microsoft.com/ICT2025/).
+Please complete the online abstract submission form [using the following link](https://cmt3.research.microsoft.com/ICFP2026).
 
 All correspondence will be sent to the corresponding author’s email address.
 
