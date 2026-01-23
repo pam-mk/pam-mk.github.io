@@ -34,11 +34,18 @@ pluralizelisttitles = false
     url        = "/"
     weight     = 1
 
+[[menu.main]]
+    name       = "about"
+    identifier = "menu.about"
+    url        = "/about/"
+    weight     = 2
+
 #[[menu.main]]
-#    name       = "about"
-#    identifier = "menu.about"
-#    url        = "/img/template-easy-customize.png"
-#   weight     = 2
+#    name       = "about-1"
+#    identifier = "menu.about-1"
+#    url        = "/about-1/"
+#    weight      = 2
+#    parent      = "menu.about"
 
 # [[menu.main]]
 #     name       = "Programme"
@@ -145,8 +152,8 @@ pluralizelisttitles = false
     # - you're done. Happy mailing!
     #
     # Enable the contact form by entering your Formspree.io endpoint url
-    formspree_action = "https://formspree.io/f/mzderbrz"
-    contact_form_ajax = false
+    formspree_action = "https://formspree.io/f/xeeakaek"
+    contact_form_ajax = true
 
     # Formspree form supports Google reCAPTCHA Key (type v2).
     # If you use this feature, you should enable reCAPTCHA feature in the Formspree dashboard.
