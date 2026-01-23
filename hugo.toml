@@ -67,6 +67,13 @@ pluralizelisttitles = false
     parent     = "menu.cfp"
 
 [[menu.main]]
+    name       = "Committee"
+    identifier = "menu.committee"
+    url        = "/committee/"
+    weight     = 3
+    parent     = "menu.cfp"
+
+[[menu.main]]
     name       = "Registration"
     identifier = "menu.registration"
     url        = ""
