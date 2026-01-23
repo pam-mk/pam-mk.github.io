@@ -44,7 +44,7 @@ Flexible APA-style Format
 - Poster presentation
 
 ### Topic Areas
-View the abstract topics [here](./topics)
+View the abstract topics [here](/topics/)
 
 ### Submission Rules
 - Abstracts must be submitted by **September 1, 2026**.
