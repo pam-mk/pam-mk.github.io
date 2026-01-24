@@ -1,10 +1,10 @@
 +++
-title = "Proposed topics for Forensic Psychiatric conference"
-description = "Proposed topics for FP Conference"
+title = "Тopics for Forensic Psychiatric conference"
+description = "Тopics for FP Conference"
 type = "page"
 keywords = ["FP","topics","submission","abstract"]
 +++
-# Proposed topics for Forensic Psychiatric conference
+
 - Models of Forensic Psychiatric Care in different countries
   - (e.g. South-East European, Western European, USA/Canada, Latin America ...)
 - Legislation and Policies in different countries
