@@ -28,19 +28,32 @@ keywords = ["registration","accomodation", "hotel"]
 ## Payments for registration fees and hotel accommodation can be made with credit cards (VISA and MasterCard), with an authorization form
  
 **The payment of the registration can be made at the following bank account:**  
-|                              |                        |
-|------------------------------|-------------------------------------------|
-| Beneficary: VIS POJ DOOEL    |  	For local colleagues (in local currency)|
-| Bank: Sparkasse Bank         | Денарско плаќање|    
-| SWIFT : INSBMK22             | ВИС ПОЈ , ДООЕЛ |
-| ACC: 250 0001 002 475 74     | Ж-ска  250 0001 002 475 74 |
-| IBAN: MK 07250901000225945   | Депонент: Шпаркасе Банка |
-| VAT:  МК4020002131507        | Даночен број: 4020002131507 |
-| P.O. 5664926                 |                              |
+|                              |                        
+|------------------------------|
+| Beneficary: VIS POJ DOOEL    |  	
+| Bank: Sparkasse Bank         |     
+| SWIFT : INSBMK22             | 
+| ACC: 250 0001 002 475 74     | 
+| IBAN: MK 07250901000225945   | 
+| VAT:  МК4020002131507        | 
+| P.O. 5664926                 |                              
+|                              |                        
+|------------------------------|                     
+**For local colleagues (in local currency)**
+|                              |                        
+| Денарско плаќање|
+| ВИС ПОЈ, ДООЕЛ |
+| Ж-ска  250 0001 002 475 74 |
+| Депонент: Шпаркасе Банка |
+| Даночен број: 4020002131507 |
+|                              |                        
+|------------------------------|
 
 **Purpose of payment:**
 
 Registration fee – WPA Co-sponsored International Conference on Forensic Psychiatry
 No Bank fees to VIS POJ Travel Agency (beneficiary).
 
-*For all information and details regarding registration, please contact the agency at the following e-mail address: congress@vispoj.com.mk, www.vispoj.com.mk Phone: ++389 46 255 600 /  + 389 72 255 600*
+*For all information and details regarding registration, please contact the agency at the following e-mail address: congress@vispoj.com.mk, www.vispoj.com.mk* 
+
+*Phone: ++389 46 255 600 /  + 389 72 255 600*
