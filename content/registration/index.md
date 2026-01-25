@@ -2,7 +2,7 @@
 title = "Registration & Fees"
 description = "Congress Committees of WPA Co-sponsored International Conference for Forensic Psychiatry"
 type = "page"
-keywords = ["registration","accomidation", "hotel"]
+keywords = ["registration","accomodation", "hotel"]
 +++
 
 
