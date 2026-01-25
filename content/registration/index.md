@@ -25,18 +25,18 @@ keywords = ["registration","accomodation", "hotel"]
 - Congress Party and Closing Ceremony
 - Certifícate of Attendance// CME Credits
 
-## Payments for registration fees and hotel accommodation can be made with credit cards (VISA and MasterCard) , with an authorization form
+## Payments for registration fees and hotel accommodation can be made with credit cards (VISA and MasterCard), with an authorization form
  
 **The payment of the registration can be made at the following bank account:**  
-|                            |                        |
-|----------------------------|-------------------------------------------|
-| Beneficary: VIS POJ DOOEL  |  	For local colleagues (in local currency)|
-| Bank: Sparkasse Bank       | Денарско плаќање|    
-| SWIFT : INSBMK22           | ВИС ПОЈ , ДООЕЛ |
-| ACC: 250 0001 002 475 74   | Ж-ска  250 0001 002 475 74 |
-| IBAN: MK 07250901000225945 | Депонент: Шпаркасе Банка |
-| VAT:  МК4020002131507      | Даночен број: 4020002131507 |
-| P.O. 5664926               |                              |
+|                              |                        |
+|------------------------------|-------------------------------------------|
+| Beneficary: VIS POJ DOOEL    |  	For local colleagues (in local currency)|
+| Bank: Sparkasse Bank         | Денарско плаќање|    
+| SWIFT : INSBMK22             | ВИС ПОЈ , ДООЕЛ |
+| ACC: 250 0001 002 475 74     | Ж-ска  250 0001 002 475 74 |
+| IBAN: MK 07250901000225945   | Депонент: Шпаркасе Банка |
+| VAT:  МК4020002131507        | Даночен број: 4020002131507 |
+| P.O. 5664926                 |                              |
 
 **Purpose of payment:**
 
