@@ -1320,7 +1320,7 @@ fieldset[disabled] .btn-template-primary.active {
 }
 .testimonials .item .testimonial .name-picture {
   /*  float: right; */
-  width: 80%;
+  width:95%;
   text-align: right;
 }
 .testimonials .item .testimonial .name-picture h5 {

@@ -40,6 +40,20 @@ pluralizelisttitles = false
     url        = "/about/"
     weight     = 2
 
+[[menu.main]]
+    name       = "Welcome Message"
+    identifier = "menu.welcome"
+    url        = "/welcome/"
+    weight     = 1
+    parent     = "menu.about"
+
+[[menu.main]]
+    name       = "Committee"
+    identifier = "menu.committee"
+    url        = "/committee/"
+    weight     = 2
+    parent     = "menu.about"
+
 #[[menu.main]]
 #    name       = "about-1"
 #    identifier = "menu.about-1"
@@ -74,12 +88,7 @@ pluralizelisttitles = false
     weight     = 2
     parent     = "menu.cfp"
 
-[[menu.main]]
-    name       = "Committee"
-    identifier = "menu.committee"
-    url        = "/committee/"
-    weight     = 3
-    parent     = "menu.cfp"
+
 
 [[menu.main]]
     name       = "Registration"
