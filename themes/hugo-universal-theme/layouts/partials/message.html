@@ -4,16 +4,44 @@
 <section class="bar background-gray no-mb">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 col-xl-6 col-sm-12">
-                <p class="lead">
-                  {{ .Site.Params.message.message | markdownify }}
-                </p>
-                <p>{{.Site.Params.message.organizator | markdownify }}</p>
+          <div class="col-md-12 col-xl-12 col-sm-12">
+            <div class="text-center lead" style="margin-bottom: 5%">
+              <h1 style="text-transform: uppercase;"> Abstract Submission</h2>
             </div>
-            <div class="col-md-6 col-xl-6 col-sm-12">
-                <img style="width: 90%" src="/img/conf-info.png" >
+            <div class="col-md-12 col-xl-12 col-sm-12 heading text-center">
+            <h2 style="text-transform: uppercase;">
+              <strong>
+                Deadline: {{.Site.Params.message.deadline}}
+            </strong></h2>
             </div>
+          <div class="col-md-12 col-xl-12 col-sm-12 text-center" style="margin-bottom: 40px;">
+            <a class="btn btn-lg btn-default btn-lg" style="border-radius: 15px; border-width: 3px; border-color:#337AB7; min-width: 40%; font-size: 3rem;" href="https://cmt3.research.microsoft.com/ICFP2026/">Register Now</a>
+
+          </div>
+
+            <div class="col-md-12 col-xl-12 col-sm-12">
+              <p class="lead" style="text-indent: 2em; text-align: center"><em>
+                {{ .Site.Params.message.message | markdownify }}
+                </em>
+              </p>
+                <!--<p>{{.Site.Params.message.organizator | markdownify }}</p> -->
+            </div>
+            <div style="padding: 20px 0px">
+              <div class="row" >
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3" style="margin: 10px">
+            <p class="btn btn-lg btn-primary" style="max-width:85%; min-width: 80%; border-radius: 10px"> 10+ <br> International Speakers</p>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3"  style="margin: 10px">
+          <p class="btn btn-lg btn-primary" style="max-width:85%; min-width: 80%; border-radius: 10px;">200+<br> Participants</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3"  style="margin: 10px">
+            <p class="btn btn-lg btn-primary" style="max-width: 85%; min-width: 80%; border-radius: 10px;"> Location<br> Ohrid, North Macedonia</p>
+        </div>
+        </div>
+        </div>
+
+
+    </div>
 
     </div>
 </section>
