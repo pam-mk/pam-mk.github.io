@@ -1,5 +1,5 @@
 +++
-title = "Welcome to ..."
+title = "PAM Welcome Message "
 description = "Congress Committees of WPA Co-sponsored International Conference for Forensic Psychiatry"
 type = "page"
 keywords = ["Committee",]

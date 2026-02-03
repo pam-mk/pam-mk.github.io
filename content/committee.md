@@ -9,6 +9,7 @@ keywords = ["Committee",]
 - Birgit Völlm, Germany - SPC Co-chair 
 - Gary Chaimowitz, Canada - SPC Co-chair
 - Antoni Novotni, North Macedonia
+- Carlos Hugo Isaac Serna, Mexico
 - Slavica Arsova Hadji Angjelkovska, North Macedonia
 - Dimitar Bonevski, North Macedonia
 - Srdjan Milovanovic, Serbia
