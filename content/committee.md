@@ -13,10 +13,12 @@ keywords = ["Committee",]
 - Slavica Arsova Hadji Angjelkovska, North Macedonia
 - Dimitar Bonevski, North Macedonia
 - Srdjan Milovanovic, Serbia
+- Ana Opankovic, Serbia
 - Goran Racetovic, Bosnia and Herzegovina
 - Goran Arbanas, Croatia
-- Ceda Miljevic, Serbia
+- Cedo Miljevic, Serbia
 - Milan Latas, Serbia
+- Bojana Dunjic-Kostic, Serbia
 - Igor Filipcic, Croatia
 
 # Organising Committee (OC)
