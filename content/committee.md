@@ -26,9 +26,9 @@ keywords = ["Committee",]
 
 # Organising Committee (OC)
 
-- Antoni Novotni
-- Slavica Arsova Hadji Angjelkovska
-- Dimitar Bonevski
+- Antoni Novotni - Chair of Organizing Committee
+- Slavica Arsova Hadji Angjelkovska - Co-Chair of Organizing Committee
+- Dimitar Bonevski - Co-Chair of Organizing Committee
 - Stojan Bajraktarov
 - Nensi Manusheva
 - Elizabet Miceva Velichkovska
