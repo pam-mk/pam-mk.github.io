@@ -35,6 +35,7 @@ keywords = ["Committee",]
 - Zoja Babinkostova
 - Ana Filipche
 - Aleksandar Ristevski
+- Andromahi Naumovska
 - Sonja Delova
 - Hisa Avdulai
 - Sashko Stojilovski
