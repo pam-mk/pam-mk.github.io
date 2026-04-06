@@ -8,3 +8,6 @@ keywords = ["Schedule","Ohrid","programme","conference"]
 # Conference Programme
 
 The conference is scheduled for 15 -- 18 of October, 2026.
+
+{{< include-html "programme.html" >}}
+
