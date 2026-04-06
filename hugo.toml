@@ -54,6 +54,13 @@ pluralizelisttitles = false
     weight     = 2
     parent     = "menu.about"
 
+[[menu.main]]
+    name       = "Programme"
+    identifier = "menu.programme"
+    url        = "/programme/"
+    weight     = 2
+    parent     = "menu.about"
+
 #[[menu.main]]
 #    name       = "about-1"
 #    identifier = "menu.about-1"
