@@ -47,7 +47,7 @@ Flexible APA-style Format
 View the abstract topics [here](/topics/)
 
 ### Submission Rules
-- Abstracts must be submitted by **September 1, 2026**.
+- Abstracts must be submitted by **September 15, 2026**.
 - Abstracts may be research-based, theoretical, or case/experience-based.
 - Authors must use one of the two approved structures (research or case/clinical).
 - Submissions must be original and not previously presented at another major conference.
