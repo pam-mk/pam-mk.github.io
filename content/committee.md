@@ -16,6 +16,7 @@ keywords = ["Committee",]
 - Liljana Ignjatova, North Macedonia
 - Milan Latas, Serbia
 - Stojan Bajraktarov, North Macedonia
+- Maryana Kravtsenyuk, Canada
 - Goran Racetovic, Bosnia and Herzegovina
 - Goran Arbanas, Croatia
 - Cedo Miljevic, Serbia
