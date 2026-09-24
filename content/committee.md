@@ -13,6 +13,7 @@ keywords = ["Committee",]
 - Slavica Arsova Hadji Angjelkovska, North Macedonia
 - Dimitar Bonevski, North Macedonia
 - Srdjan Milovanovic, Serbia
+- Liljana Ignjatova
 - Milan Latas, Serbia
 - Stojan Bajraktarov, North Macedonia
 - Goran Racetovic, Bosnia and Herzegovina
@@ -31,6 +32,7 @@ keywords = ["Committee",]
 - Dimitar Bonevski - Co-Chair of Organizing Committee
 - Stojan Bajraktarov
 - Nensi Manusheva
+- Liljana Ignjatova
 - Elizabet Miceva Velichkovska
 - Zoja Babinkostova
 - Ana Filipche
@@ -46,17 +48,13 @@ keywords = ["Committee",]
 
 # Local Organising Committee (LOC)
 - Petar Sotiroski
-- Bojan Nikolovski
-- Aleksandar Kjosev
-- Ljubisha Novotni
-- Biljana Gagachovska
-- Behije Nuhii
-- Stefanija Mitrovska
 - Nevena Nikolova
 - Viktorija Vasilevska Korovesh
-- Evgenija Galeva
-- Erbeline Hoxha
-- Jane Ivanoski
+- Bojan Nikolovski
+- Stefanija Mitrovska
+- Aleksandar Kjosev
+- Ljubisha Novotni
+
 
 ---
 
