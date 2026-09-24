@@ -13,7 +13,7 @@ keywords = ["Committee",]
 - Slavica Arsova Hadji Angjelkovska, North Macedonia
 - Dimitar Bonevski, North Macedonia
 - Srdjan Milovanovic, Serbia
-- Liljana Ignjatova
+- Liljana Ignjatova, North Macedonia
 - Milan Latas, Serbia
 - Stojan Bajraktarov, North Macedonia
 - Goran Racetovic, Bosnia and Herzegovina
