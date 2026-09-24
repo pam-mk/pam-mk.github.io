@@ -33,3 +33,9 @@
     margin-top: 0;
     margin-bottom: 0;
 }
+
+@media (max-width: 767px) {
+    .md-columns.mobile-single-column {
+        flex-direction: column;
+    }
+}

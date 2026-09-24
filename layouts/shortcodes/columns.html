@@ -1,4 +1,4 @@
-<div class="md-columns">
+<div class="md-columns{{ with .Get "class" }} {{ . }}{{ end }}">
 {{ range split .Inner "<--->" }}
 {{ printf "<div class=\"markdown-inner\">" | htmlUnescape | safeHTML }}
 {{ . | safeHTML }}

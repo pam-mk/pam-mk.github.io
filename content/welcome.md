@@ -5,7 +5,7 @@ type = "page"
 keywords = ["Committee",]
 +++
 
-{{< columns >}}
+{{< columns class="mobile-single-column" >}}
 <div>
     <p class="lead">We are pleased to announce that the Thematic Conference on Forensic Psychiatry and Prison Psychiatry between Medicine and Law will be held in 
         <a href="/location">Ohrid, North Macedonia</a>, on 15 - 18 October, 2026. This long-anticipated event aims to unite professionals from psychiatry, psychology, law, and criminology in a multidisciplinary dialogue at the crossroads “where justice meets the human mind.”</p>
