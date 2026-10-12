@@ -61,6 +61,13 @@ pluralizelisttitles = false
     weight     = 2
     parent     = "menu.about"
 
+[[menu.main]]
+    name       = "Book of Abstracts"
+    identifier = "menu.book-of-abstracts"
+    url        = "/book-of-abstracts/"
+    weight     = 3
+    parent     = "menu.about"
+
 #[[menu.main]]
 #    name       = "about-1"
 #    identifier = "menu.about-1"
@@ -302,5 +309,4 @@ pluralizelisttitles = false
     category = "categories"
     tag = "tags"
     author = "authors"
-
 

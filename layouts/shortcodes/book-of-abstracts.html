@@ -1,0 +1,24 @@
+{{ if fileExists "static/book-of-abstracts.pdf" }}
+<p>Download the <a href="{{ "book-of-abstracts.pdf" | relURL }}">book of abstracts</a>.</p>
+<div>
+  <object
+    data="{{ "book-of-abstracts.pdf" | relURL }}"
+    type="application/pdf"
+    width="100%"
+    height="800px"
+    title="Book of Abstracts PDF Viewer"
+  >
+    <iframe
+      src="{{ "book-of-abstracts.pdf" | relURL }}"
+      width="100%"
+      height="800px"
+      style="border: none"
+      title="Book of Abstracts Fallback PDF Viewer"
+    >
+      <p>Your browser does not support PDFs. <a href="{{ "book-of-abstracts.pdf" | relURL }}">Download the PDF</a>.</p>
+    </iframe>
+  </object>
+</div>
+{{ else }}
+<p>The book of abstracts will be available soon.</p>
+{{ end }}
