@@ -1,4 +1,180 @@
 /* your styles go here */
+.conference-posters-cover {
+    max-width: 680px;
+    margin: 0 auto 3rem;
+}
+
+.conference-posters-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.conference-poster {
+    margin: 0 0 3rem;
+}
+
+.conference-poster-view {
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.conference-poster-view img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.conference-poster-watermark {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    pointer-events: none;
+    color: rgba(30, 55, 80, 0.05);
+    font-size: clamp(14px, 3vw, 32px);
+    font-weight: bold;
+    text-align: center;
+}
+
+.conference-poster-watermark span {
+    transform: rotate(-20deg);
+}
+
+.conference-poster figcaption {
+    padding-top: 1rem;
+}
+
+.conference-exhibition {
+    --exhibition-navy: #102d44;
+    --exhibition-gold: #bc9346;
+}
+
+.conference-exhibition [id] {
+    scroll-margin-top: 95px;
+}
+
+.exhibition-introduction {
+    max-width: 780px;
+    margin: 4rem auto 6rem;
+    padding: 3rem 0;
+    border-top: 1px solid #bc9346;
+    border-bottom: 1px solid #bc9346;
+}
+
+.exhibition-eyebrow {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.exhibition-introduction h1,
+.exhibition-contents h2,
+.exhibition-section-divider h2,
+.exhibition-closing h2 {
+    font-family: Georgia, serif;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.exhibition-introduction p { line-height: 1.8; }
+.exhibition-rights { color: #626b73; font-size: 13px; }
+.exhibition-jump { display: inline-block; margin-top: 1rem; font-weight: 600; }
+.exhibition-contents { margin-bottom: 6rem; }
+.exhibition-contents-group { margin: 3rem 0; }
+.exhibition-contents-group h3 { font-size: 18px; line-height: 1.5; }
+.exhibition-contents-group h3 a { color: #102d44; }
+
+.exhibition-contents-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 3rem;
+    list-style: none;
+    padding: 0;
+}
+
+.exhibition-contents-list li { border-bottom: 1px solid #e5e9ec; }
+.exhibition-contents-list li > a {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    padding: 17px 0;
+    color: #203c50;
+    line-height: 1.5;
+}
+.exhibition-number { color: #876421; font-size: 13px; font-weight: 700; white-space: nowrap; }
+.exhibition-toc-title { display: block; }
+.exhibition-contributor { display: block; color: #687580; font-size: 12px; margin-top: 5px; }
+
+.exhibition-section-divider {
+    background: #102d44;
+    color: #fff;
+    padding: 5rem 4rem;
+    margin: 6rem 0 3rem;
+    border-top: 3px solid #bc9346;
+}
+.exhibition-section-divider .exhibition-eyebrow { color: #efd199; }
+.exhibition-section-divider h2 { color: #fff; max-width: 800px; line-height: 1.25; margin: 20px 0; }
+.exhibition-section-divider > p:last-child { color: #d8e2ea; margin-bottom: 0; max-width: 650px; }
+.conference-exhibition .conference-poster { padding: 1rem 0 4rem; margin-bottom: 3rem; border-bottom: 1px solid #e0e5e9; }
+.exhibition-poster-heading h3 { color: #102d44; font-size: 23px; line-height: 1.4; margin: 10px 0; }
+.exhibition-poster-heading > p { color: #66747f; }
+.exhibition-poster-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 22px; margin: 20px 0; font-size: 13px; }
+.poster-enlarge, .poster-dialog button {
+    border: 1px solid #102d44;
+    background: #102d44;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.poster-enlarge:hover, .poster-dialog button:hover { background: #244c68; }
+.conference-exhibition a:focus-visible, .poster-enlarge:focus-visible, .poster-dialog button:focus-visible { outline: 3px solid #bc9346; outline-offset: 4px; }
+.exhibition-closing { padding: 4rem 0 2rem; text-align: center; }
+.exhibition-closing .exhibition-eyebrow { color: #876421; }
+
+.poster-dialog {
+    position: fixed;
+    inset: 0;
+    width: 96vw;
+    max-width: 1800px;
+    height: 94vh;
+    max-height: 94vh;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    color: #102d44;
+    background: #f1f4f6;
+}
+.poster-dialog[open] { display: flex; flex-direction: column; }
+.poster-dialog::backdrop { background: rgba(7, 20, 30, .85); }
+.poster-dialog-toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 20px; background: #fff; border-bottom: 1px solid #dce2e7; }
+.poster-dialog-toolbar h2 { font-size: 16px; line-height: 1.4; flex: 1 1 360px; margin: 0; }
+.poster-dialog-toolbar > div { display: flex; gap: 10px; }
+.poster-dialog-scroll { flex: 1; min-height: 0; overflow: auto; padding: 16px; }
+.poster-dialog .conference-poster-view { min-width: 100%; background: #fff; }
+.poster-dialog .conference-poster-view img { max-width: none; }
+
+@media (max-width: 767px) {
+    .exhibition-contents-list { grid-template-columns: 1fr; }
+    .exhibition-section-divider { padding: 3rem 2rem; }
+    .exhibition-section-divider h2 { font-size: 28px; }
+    .exhibition-poster-heading h3 { font-size: 20px; }
+    .poster-dialog-toolbar { padding: 12px; }
+    .poster-dialog-scroll { padding: 8px; }
+}
+
+@media print {
+    .conference-posters {
+        display: none !important;
+    }
+}
+
 /* Example site test */
 
 .box-image-text .image {

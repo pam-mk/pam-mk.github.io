@@ -1,0 +1,324 @@
+{
+  "groups": [
+    {
+      "id": "risk",
+      "title": "Violence, Risk Assessment & Trauma",
+      "description": "Violence risk, protective factors and the psychological impact of trauma."
+    },
+    {
+      "id": "youth",
+      "title": "Child & Adolescent Forensic Psychiatry",
+      "description": "Development, safeguarding, consent and responsibility in young people."
+    },
+    {
+      "id": "responsibility",
+      "title": "Criminal Responsibility & Clinical Cases",
+      "description": "Clinical presentations and the assessment of criminal responsibility."
+    },
+    {
+      "id": "assessment",
+      "title": "Psychological Assessment, Capacity & Ethics",
+      "description": "Psychological functioning, legal capacity and ethical boundaries."
+    },
+    {
+      "id": "treatment",
+      "title": "Addictions & Forensic Treatment",
+      "description": "Substance use, treatment approaches and care in forensic settings."
+    },
+    {
+      "id": "services",
+      "title": "Forensic Services, Medicine & Policy",
+      "description": "Forensic medicine, service organization and policy perspectives."
+    }
+  ],
+  "posters": [
+    {
+      "id": "P01",
+      "group": "risk",
+      "image": "aleksandar-pavlovic.webp",
+      "title": "Beyond Fair Play: Forensic Psychiatric Perspectives in Competitive Sport",
+      "author": "Aleksandar Pavlović",
+      "source": "Aleksandar Pavlović.png"
+    },
+    {
+      "id": "P02",
+      "group": "risk",
+      "image": "biljana-ariznakoska.webp",
+      "title": "Зад насилниот акт: Што стои зад тешкото импулсивно насилство кај адолесцентите?",
+      "author": "Biljana Ariznakoska Eftimova",
+      "source": "Biljana Ariznakoska.pdf"
+    },
+    {
+      "id": "P03",
+      "group": "risk",
+      "image": "ljiljana-simic.webp",
+      "title": "Violence Risk Assessment After Sustained Remission in a Patient With Psychotic Disorder: A Case Report",
+      "author": "Ljiljana Simić",
+      "source": "Ljiljana Simić.png"
+    },
+    {
+      "id": "P04",
+      "group": "risk",
+      "image": "maja-petrovic.webp",
+      "title": "Acute psychotic disorder with violent behavior in a patient with Parkinson’s disease: Case report and forensic implications",
+      "author": "Maja Petrović",
+      "source": "Maja_Petrovic.pdf"
+    },
+    {
+      "id": "P05",
+      "group": "risk",
+      "image": "snezana-djordjevic.webp",
+      "title": "Stalking Offenders: Typologies and the Role of Forensic Psychiatric Assessment in Determining Criminal Responsibility",
+      "author": "Snežana Djordjević",
+      "source": "Snezana Djordjevic.pdf"
+    },
+    {
+      "id": "P06",
+      "group": "risk",
+      "image": "verica-malinkova.webp",
+      "title": "Beyond the Battlefield: Resilience or PTSD? Psychological Consequences of Working in a War Zone – A Case Series",
+      "author": "Verica Malinkova Dimovska",
+      "source": "Verica Malinkova.pdf"
+    },
+    {
+      "id": "P07",
+      "group": "risk",
+      "image": "vesna-v-jovanovska.webp",
+      "title": "Repeated Traumatic Experiences as a Trigger for Homicide in the Heat of the Moment",
+      "author": "Vesna Jovanovska",
+      "source": "Vesna V. Jovanovska.pdf"
+    },
+    {
+      "id": "P08",
+      "group": "youth",
+      "image": "evgenija-galeva.webp",
+      "title": "Beyond the Index Incident: The Role of Developmental History in Adolescent Violence Risk Assessment",
+      "author": "Evgenija Galeva",
+      "source": "Evgenija Galeva.pdf"
+    },
+    {
+      "id": "P09",
+      "group": "youth",
+      "image": "marija-ruvceska.webp",
+      "title": "Beyond IQ: Intellectual disability, behavioral control and criminal responsibility in adolescence",
+      "author": "Marija Ruvcheska",
+      "source": "Marija Ruvceska.pdf"
+    },
+    {
+      "id": "P10",
+      "group": "youth",
+      "image": "viktorija-korovesh.webp",
+      "title": "Parental Consent, Adolescent Dissent: A Case-Based Medico-Legal Analysis of Psychiatric Hospitalization of a Minor",
+      "author": "Viktorija Korovesh",
+      "source": "Viktorija Korovesh.pdf"
+    },
+    {
+      "id": "P11",
+      "group": "youth",
+      "image": "goran-pavlovski.webp",
+      "title": "Child Abuse-Related Fatalities",
+      "author": "Goran Pavlovski",
+      "source": "Goran Pavlovski.pdf"
+    },
+    {
+      "id": "P12",
+      "group": "responsibility",
+      "image": "dalibor-smilevski.webp",
+      "title": "Fear, Acute Affective Reaction and Diminished Criminal Responsibility in a Life-Threatening Violent Event: A Forensic Psychiatric Case Report",
+      "author": "Dalibor Smilevski",
+      "source": "Dalibor Smilevski.pdf"
+    },
+    {
+      "id": "P13",
+      "group": "responsibility",
+      "image": "iva-velickovska.webp",
+      "title": "Neurodevelopmental Dysregulation vs. Forensic Intent: Differentiating Ego-Dystonic OCD Compulsions from Unlawful Conduct in Adult ASD",
+      "author": "Iva Velickovska",
+      "source": "Iva Velickovska.pdf"
+    },
+    {
+      "id": "P14",
+      "group": "responsibility",
+      "image": "marijana-stankovic-2.webp",
+      "title": "Psychological and Psychiatric Assessment of Criminal Responsibility in a Person with Bipolar Disorder: A Case Report",
+      "author": "Marijana Stankovic",
+      "source": "Marijana Stankovic 2.pdf"
+    },
+    {
+      "id": "P15",
+      "group": "responsibility",
+      "image": "nikolova-nevena.webp",
+      "title": "Prolonged Grief Disorder Presenting as First-Time Offending Conduct",
+      "author": "Nevena Nikolova",
+      "source": "Nikolova_Nevena.pdf"
+    },
+    {
+      "id": "P16",
+      "group": "responsibility",
+      "image": "viktorija-vujovikj.webp",
+      "title": "Beyond the Psychosis Paradigm: Antisocial Personality Disorder and Criminal Responsibility in Double Grandparent Homicide",
+      "author": "Viktorija Vujovikj",
+      "source": "Viktorija Vujovikj.pdf"
+    },
+    {
+      "id": "P17",
+      "group": "assessment",
+      "image": "aleksanda-misheva.webp",
+      "title": "When a clinical report may carry legal weight: Forensic and ethical boundaries in documenting intimate partner violence",
+      "author": "Aleksanda Misheva",
+      "source": "Aleksanda Misheva.jpg"
+    },
+    {
+      "id": "P18",
+      "group": "assessment",
+      "image": "bojan-nikolovski.webp",
+      "title": "Institutionalization as a Factor in the Assessment of Legal Capacity",
+      "author": "Bojan Nikolovski",
+      "source": "Bojan Nikolovski.pdf"
+    },
+    {
+      "id": "P19",
+      "group": "assessment",
+      "image": "ena-canevska.webp",
+      "title": "Forensic Psychological Evaluation in the Context of a Proposal for Outpatient Treatment",
+      "author": "Ena Canevska",
+      "source": "Ena Canevska.png"
+    },
+    {
+      "id": "P20",
+      "group": "assessment",
+      "image": "frosina-nikolikj.webp",
+      "title": "Postoperative Delirium and Acute Psychiatric Presentations: Diagnostic and Forensic Dilemmas",
+      "author": "Frosina Nikolikj",
+      "source": "Frosina.Nikolikj.pdf"
+    },
+    {
+      "id": "P21",
+      "group": "assessment",
+      "image": "katerina-karanfilovikj-gruevska.webp",
+      "title": "Neuropsychological Assessment in a Forensic Context",
+      "author": "Katerina Karanfilovikj Gruevska",
+      "source": "Katerina Karanfilovikj Gruevska.pdf"
+    },
+    {
+      "id": "P22",
+      "group": "assessment",
+      "image": "ljubica-popova.webp",
+      "title": "Poster presentation — Ljubica Popova",
+      "author": "Ljubica Popova",
+      "source": "Ljubica Popova.pdf"
+    },
+    {
+      "id": "P23",
+      "group": "assessment",
+      "image": "ljubinka-damjanovik.webp",
+      "title": "Challenges in Assessing Parental Capacities: Between Objective Assessment and the Best Interests of the Child",
+      "author": "Ljubinka Damjanovikj",
+      "source": "Ljubinka Damjanovik.pdf"
+    },
+    {
+      "id": "P24",
+      "group": "assessment",
+      "image": "marija-kostadinovska.webp",
+      "title": "From Diagnosis to Function: Mental Disorder, Reasoning and Authorship",
+      "author": "Marija Kostadinovska",
+      "source": "Marija Kostadinovska.pdf"
+    },
+    {
+      "id": "P25",
+      "group": "assessment",
+      "image": "marijana-stankovic-1.webp",
+      "title": "Neuropsychological Assessment in Elderly Individuals and the Right of Property Transfer: A Case Study",
+      "author": "Marijana Stankovic",
+      "source": "Marijana Stankovic 1.pdf"
+    },
+    {
+      "id": "P26",
+      "group": "treatment",
+      "image": "ana-stankovska.webp",
+      "title": "Clinical-Forensic Characteristics in Patients with Behavioral Disorder as a Result of Alcohol and Other Psychoactive Substance Use",
+      "author": "Ana Stankovska Gjorgieva",
+      "source": "Ana Stankovska.pdf"
+    },
+    {
+      "id": "P27",
+      "group": "treatment",
+      "image": "aneta-spasovska.webp",
+      "title": "Ефикасноста на алтернативна мерка условна осуда со заштитен надзор во третманот кај хероински зависници на супституционен третман",
+      "author": "Aneta Spasovska Trajanovska",
+      "source": "Aneta Spasovska.pdf"
+    },
+    {
+      "id": "P28",
+      "group": "treatment",
+      "image": "vesna-suklovska.webp",
+      "title": "Нагло прекинување на клоназепам во притвор: Тежок бензодијазепински апстиненцијален синдром со насилно однесување",
+      "author": "Vesna Suklovska",
+      "source": "Vesna Suklovska.pdf"
+    },
+    {
+      "id": "P29",
+      "group": "treatment",
+      "image": "vilma-videnova.webp",
+      "title": "Anxiety in a Forensic Psychiatric Inpatient Setting",
+      "author": "Vilma Videnova",
+      "source": "Vilma Videnova.pdf"
+    },
+    {
+      "id": "P30",
+      "group": "services",
+      "image": "djilali-merzoug-mohammed.webp",
+      "title": "When Suicide Defies Obvious Interpretation: Two Cases of Complex Suicides in Forensic Psychiatry",
+      "author": "Djilali Merzoug Mohammed",
+      "source": "Djilali Merzoug Mohammed.pdf"
+    },
+    {
+      "id": "P31",
+      "group": "services",
+      "image": "gligor-ristovski.webp",
+      "title": "Clinical-Psychiatric and Histopathological Correlations in Cases of Sudden Death in a Psychiatric Hospital",
+      "author": "Gligor Ristovski",
+      "source": "GLIGOR RISTOVSKI.pdf"
+    },
+    {
+      "id": "P32",
+      "group": "services",
+      "image": "larisa-stojkovik-trajkovska.webp",
+      "title": "Психолошки аспекти на сајбер-криминалот и предизвиците за форензичката практика",
+      "author": "Larisa Stojkovik Trajkovska",
+      "source": "Larisa Stojkovik Trajkovska.pdf"
+    },
+    {
+      "id": "P33",
+      "group": "services",
+      "image": "malvina-hoxha.webp",
+      "title": "Harmonization of Albanian Pharmaceutical Legislation with European Standards: Pharmacovigilance and the Safe Use of Psychotropic Medicines in Forensic Psychiatry",
+      "author": "Malvina Hoxha",
+      "source": "Malvina Hoxha.pdf"
+    },
+    {
+      "id": "P34",
+      "group": "services",
+      "image": "pavlina-ilievska.webp",
+      "title": "Форензичка психијатрија – теми и дилеми низ призмата на клиничарот",
+      "author": "Pavlina Ilieska Kotevska",
+      "source": "Pavlina Ilievska.pdf"
+    },
+    {
+      "id": "P35",
+      "group": "services",
+      "image": "rosica-cakar.webp",
+      "title": "Alcohol Involvement in Road Traffic Accident Cases: Postmortem Findings and Retrograde BAC Assessment",
+      "author": "Rosica Chakar",
+      "source": "Rosica Cakar.pdf"
+    },
+    {
+      "id": "P36",
+      "group": "services",
+      "image": "valentina-talevska.webp",
+      "title": "Форензичка заштита на менталното здравје во заедницата во Северна Македонија: процена на ризик, безбедност и деинституционализација",
+      "author": "Valentina Talevska",
+      "source": "Valentina Talevska.png"
+    }
+  ]
+}

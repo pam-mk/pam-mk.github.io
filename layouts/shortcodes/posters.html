@@ -1,0 +1,106 @@
+{{/* Only the final exhibition manifest determines which posters appear.
+     The watermark is a viewing deterrent; image files remain publicly accessible. */}}
+{{ $exhibition := site.Data.poster_exhibition }}
+<div class="conference-exhibition">
+  <div class="conference-posters-cover">
+    <img src="{{ "Poster_Exhibition_Cover.png" | relURL }}" alt="Poster Exhibition — WPA Co-sponsored International Conference on Forensic Psychiatry, Ohrid, 15–18 October 2026" width="1054" height="1492">
+  </div>
+  <section class="exhibition-introduction" aria-labelledby="exhibition-welcome">
+    <p class="exhibition-eyebrow">Ohrid · 15–18 October 2026</p>
+    <h1 id="exhibition-welcome">Poster Exhibition</h1>
+    <p>Welcome to the poster exhibition of the WPA Co-sponsored International Conference on Forensic Psychiatry. Explore research, clinical cases and professional perspectives on the relationship between mental health, medicine and law.</p>
+    <p>The {{ len $exhibition.posters }} presentations are arranged in {{ len $exhibition.groups }} thematic sections. Select a title below to go directly to a poster, or browse the exhibition in order. Use “View larger” to read a poster in detail.</p>
+    <p class="exhibition-rights">The posters remain the work of their respective authors. Please do not reproduce or distribute them without permission. Contributor names are shown for navigation; full author details are provided on the posters where supplied.</p>
+    <a class="exhibition-jump" href="#poster-contents">Explore the posters <span aria-hidden="true">↓</span></a>
+  </section>
+  <nav id="poster-contents" class="exhibition-contents" aria-labelledby="contents-heading">
+    <p class="exhibition-eyebrow">{{ len $exhibition.posters }} presentations · {{ len $exhibition.groups }} thematic sections</p>
+    <h2 id="contents-heading">Contents</h2>
+    {{ range $exhibition.groups }}
+      {{ $group := . }}
+      <div class="exhibition-contents-group">
+        <h3><a href="#section-{{ .id }}">{{ .title }}</a></h3>
+        <ol class="exhibition-contents-list">
+          {{ range where $exhibition.posters "group" $group.id }}
+          <li><a href="#poster-{{ .id }}"><span class="exhibition-number">{{ .id }}</span><span><span class="exhibition-toc-title">{{ .title }}</span><span class="exhibition-contributor">{{ .author }}</span></span></a></li>
+          {{ end }}
+        </ol>
+      </div>
+    {{ end }}
+  </nav>
+  <div class="conference-posters">
+    {{ range $index, $group := $exhibition.groups }}
+    <section aria-labelledby="section-{{ .id }}">
+      <header class="exhibition-section-divider" id="section-{{ .id }}">
+        <p class="exhibition-eyebrow">Section {{ printf "%02d" (add $index 1) }} · {{ len (where $exhibition.posters "group" .id) }} posters</p>
+        <h2>{{ .title }}</h2>
+        <p>{{ .description }}</p>
+      </header>
+      {{ range where $exhibition.posters "group" .id }}
+        {{ $image := $.Page.Resources.GetMatch .image }}
+        {{ if not $image }}{{ errorf "Missing exhibition image: %s" .image }}{{ end }}
+        <figure class="conference-poster" id="poster-{{ .id }}">
+          <figcaption class="exhibition-poster-heading">
+            <span class="exhibition-number">{{ .id }}</span>
+            <h3>{{ .title }}</h3>
+            <p>{{ .author }}</p>
+            <div class="exhibition-poster-actions">
+              <button type="button" class="poster-enlarge" data-poster-src="{{ $image.RelPermalink }}" data-poster-title="{{ .id }} — {{ .title }}" aria-haspopup="dialog">View larger <span class="sr-only">— {{ .title }}</span><span aria-hidden="true"> ↗</span></button>
+              <a href="#poster-contents">Back to contents ↑</a>
+            </div>
+          </figcaption>
+          <div class="conference-poster-view">
+            <img src="{{ $image.RelPermalink }}" alt="{{ .title }} — {{ .author }}" loading="lazy" draggable="false" width="{{ $image.Width }}" height="{{ $image.Height }}">
+            <div class="conference-poster-watermark" aria-hidden="true"><span>PAM · Conference 2026 · For viewing only</span><span>PAM · Conference 2026 · For viewing only</span><span>PAM · Conference 2026 · For viewing only</span></div>
+          </div>
+        </figure>
+      {{ end }}
+    </section>
+    {{ end }}
+  </div>
+  <footer class="exhibition-closing"><p class="exhibition-eyebrow">Thank you for exploring</p><h2>Poster Exhibition · Ohrid 2026</h2><p>Organized by the Macedonian Psychiatric Association</p><a href="#poster-contents">Return to contents ↑</a></footer>
+</div>
+<dialog class="poster-dialog" aria-labelledby="poster-dialog-title">
+  <div class="poster-dialog-toolbar"><h2 id="poster-dialog-title"></h2><div><button type="button" class="poster-zoom" aria-pressed="false">Zoom in</button><button type="button" class="poster-dialog-close" autofocus>Close</button></div></div>
+  <div class="poster-dialog-scroll"><div class="conference-poster-view"><img alt="" draggable="false"><div class="conference-poster-watermark" aria-hidden="true"><span>PAM · Conference 2026 · For viewing only</span><span>PAM · Conference 2026 · For viewing only</span><span>PAM · Conference 2026 · For viewing only</span></div></div></div>
+</dialog>
+<script>
+(function () {
+  var dialog = document.querySelector('.poster-dialog');
+  var image = dialog.querySelector('img');
+  var view = dialog.querySelector('.conference-poster-view');
+  var zoom = dialog.querySelector('.poster-zoom');
+  var previousOverflow;
+  function resetZoom() {
+    view.style.width = '';
+    zoom.setAttribute('aria-pressed', 'false');
+    zoom.textContent = 'Zoom in';
+  }
+  document.querySelectorAll('.poster-enlarge').forEach(function (button) {
+    button.addEventListener('click', function () {
+      image.src = button.dataset.posterSrc;
+      image.alt = button.dataset.posterTitle;
+      dialog.querySelector('h2').textContent = button.dataset.posterTitle;
+      resetZoom();
+      previousOverflow = document.body.style.overflow;
+      dialog.showModal();
+      document.body.style.overflow = 'hidden';
+      dialog.querySelector('.poster-dialog-scroll').scrollTo(0, 0);
+    });
+  });
+  zoom.addEventListener('click', function () {
+    if (zoom.getAttribute('aria-pressed') === 'true') { resetZoom(); }
+    else if (image.naturalWidth) {
+      view.style.width = Math.max(image.naturalWidth, dialog.clientWidth * 1.5) + 'px';
+      zoom.setAttribute('aria-pressed', 'true');
+      zoom.textContent = 'Fit to screen';
+    }
+  });
+  dialog.querySelector('.poster-dialog-close').addEventListener('click', function () { dialog.close(); });
+  dialog.addEventListener('close', function () { document.body.style.overflow = previousOverflow; resetZoom(); });
+  document.querySelectorAll('.conference-poster-view').forEach(function (poster) {
+    poster.addEventListener('contextmenu', function (event) { event.preventDefault(); });
+    poster.addEventListener('dragstart', function (event) { event.preventDefault(); });
+  });
+})();
+</script>
