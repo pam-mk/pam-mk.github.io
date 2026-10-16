@@ -9,7 +9,7 @@
   {{ range site.Data.gallery.days }}
     {{ $day := . }}
     {{ $photos := ($.Page.Resources.Match (printf "images/%s/*" .date)).ByType "image" }}
-    <details class="gallery-day" open>
+    <details class="gallery-day">
       <summary class="gallery-day-heading" id="day-{{ .date }}">
         <span class="exhibition-eyebrow">{{ .label }}</span>
         <h2>{{ .title }} 2026</h2>
