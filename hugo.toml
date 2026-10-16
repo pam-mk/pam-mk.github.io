@@ -75,6 +75,13 @@ pluralizelisttitles = false
     weight     = 4
     parent     = "menu.about"
 
+[[menu.main]]
+    name       = "Photo Gallery"
+    identifier = "menu.gallery"
+    url        = "/gallery/"
+    weight     = 5
+    parent     = "menu.about"
+
 #[[menu.main]]
 #    name       = "about-1"
 #    identifier = "menu.about-1"

@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="{{ "css/gallery.css" | relURL }}">
+<div class="conference-gallery">
+  <header class="gallery-introduction">
+    <p class="exhibition-eyebrow">Ohrid · 15–18 October 2026</p>
+    <h1>Conference Photo Gallery</h1>
+    <p>Moments from the WPA Co-sponsored International Conference for Forensic Psychiatry, organized by the Macedonian Psychiatric Association.</p>
+    <p>Explore the photographs by day. Select a photograph to view it larger.</p>
+  </header>
+  <nav class="gallery-days" aria-label="Conference days">
+    {{ range site.Data.gallery.days }}
+    <a href="#day-{{ .date }}"><span>{{ .label }}</span>{{ .title }}</a>
+    {{ end }}
+  </nav>
+  {{ range site.Data.gallery.days }}
+    {{ $day := . }}
+    {{ $photos := ($.Page.Resources.Match (printf "images/%s/*" .date)).ByType "image" }}
+    <section class="gallery-day" aria-labelledby="day-{{ .date }}">
+      <header class="gallery-day-heading" id="day-{{ .date }}">
+        <p class="exhibition-eyebrow">{{ .label }}</p>
+        <h2>{{ .title }} 2026</h2>
+        {{ with $photos }}<p>{{ len . }} {{ if eq (len .) 1 }}photograph{{ else }}photographs{{ end }}</p>{{ end }}
+      </header>
+      {{ if $photos }}
+      <div class="gallery-grid">
+        {{ range $index, $photo := $photos }}
+          {{ $large := $photo.Fit "1600x1600 webp q82" }}
+          {{ $thumb := $photo.Fit "640x640 webp q78" }}
+          {{ $caption := printf "%s · Photograph %d" $day.title (add $index 1) }}
+          <figure class="gallery-photo">
+            <a href="{{ $large.RelPermalink }}" class="gallery-open" data-caption="{{ $caption }}" data-day="{{ $day.date }}" aria-label="View larger: {{ $caption }}">
+              <img src="{{ $thumb.RelPermalink }}" alt="{{ $caption }}" loading="lazy" decoding="async" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}">
+              <span class="gallery-enlarge" aria-hidden="true">View larger ↗</span>
+            </a>
+          </figure>
+        {{ end }}
+      </div>
+      {{ else }}
+      <p class="gallery-empty">Photographs from this day will be added soon.</p>
+      {{ end }}
+    </section>
+  {{ end }}
+</div>
+<dialog class="gallery-dialog" aria-labelledby="gallery-caption">
+  <div class="gallery-toolbar">
+    <h2 id="gallery-caption"></h2>
+    <button type="button" class="gallery-close" autofocus>Close</button>
+  </div>
+  <div class="gallery-stage"><img alt=""></div>
+  <div class="gallery-controls">
+    <button type="button" class="gallery-previous" aria-label="Previous photograph">← Previous</button>
+    <span class="gallery-counter" aria-live="polite"></span>
+    <button type="button" class="gallery-next" aria-label="Next photograph">Next →</button>
+  </div>
+</dialog>
+<script src="{{ "js/gallery.js" | relURL }}" defer></script>
