@@ -16,6 +16,12 @@
     var link = album[index];
     image.src = link.href;
     image.alt = link.dataset.caption;
+    var source = link.closest('.gallery-photo').querySelector('.gallery-download');
+    var download = dialog.querySelector('.gallery-dialog-download');
+    download.href = source.href;
+    download.download = source.download;
+    download.setAttribute('aria-label', source.getAttribute('aria-label'));
+    download.hidden = false;
     dialog.querySelector('#gallery-caption').textContent = link.dataset.caption;
     dialog.querySelector('.gallery-counter').textContent = (index + 1) + ' / ' + album.length;
     previous.disabled = next.disabled = album.length < 2;

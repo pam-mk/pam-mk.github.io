@@ -12,17 +12,24 @@
 .gallery-day-heading p:last-child { margin-bottom: 0; }
 .gallery-empty { padding: 28px 32px; background: #f1f4f6; color: #526370; }
 .gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 22px; }
-.gallery-photo { margin: 0; }
+.gallery-photo { margin: 0; position: relative; }
+.gallery-download { position: absolute; top: 10px; right: 10px; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 4px; background: #102d44; color: #fff; }
+.gallery-download:hover, .gallery-download:focus { color: #fff; background: #244c68; }
+.gallery-dialog-download { padding: 9px 14px; border: 1px solid #718797; border-radius: 3px; color: #fff; background: #203c50; white-space: nowrap; }
+.gallery-dialog-download:hover, .gallery-dialog-download:focus { color: #fff; background: #34566e; }
+.gallery-dialog-download[hidden] { display: none; }
 .gallery-open { display: block; position: relative; background: #f1f4f6; }
 .gallery-open img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
 .gallery-enlarge { position: absolute; right: 10px; bottom: 10px; padding: 6px 10px; background: #102d44; color: #fff; font-size: 12px; }
 .gallery-open:hover .gallery-enlarge { background: #244c68; }
-.conference-gallery a:focus-visible, .gallery-dialog button:focus-visible { outline: 3px solid #bc9346; outline-offset: 4px; }
+.conference-gallery a:focus-visible, .gallery-dialog button:focus-visible, .gallery-dialog a:focus-visible { outline: 3px solid #bc9346; outline-offset: 4px; }
 .gallery-dialog { position: fixed; inset: 0; width: 94vw; max-width: 1600px; height: 92vh; height: 92dvh; max-height: 94%; padding: 0; border: 0; border-radius: 6px; background: #10202c; color: #fff; }
 .gallery-dialog[open] { display: flex; flex-direction: column; }
 .gallery-dialog::backdrop { background: rgba(7, 20, 30, .88); }
 .gallery-toolbar, .gallery-controls { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 20px; }
 .gallery-toolbar h2 { margin: 0; color: #fff; font-size: 16px; line-height: 1.5; text-transform: none; letter-spacing: 0; }
+.gallery-toolbar { flex-wrap: wrap; }
+.gallery-toolbar h2 { flex: 1 1 220px; }
 .gallery-dialog button { padding: 9px 14px; border: 1px solid #718797; border-radius: 3px; color: #fff; background: #203c50; cursor: pointer; }
 .gallery-dialog button:hover { background: #34566e; }
 .gallery-dialog button:disabled { opacity: .4; cursor: default; }

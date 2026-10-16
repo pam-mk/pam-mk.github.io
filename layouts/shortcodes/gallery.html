@@ -4,7 +4,7 @@
     <p class="exhibition-eyebrow">Ohrid · 15–18 October 2026</p>
     <h1>Conference Photo Gallery</h1>
     <p>Moments from the WPA Co-sponsored International Conference for Forensic Psychiatry, organized by the Macedonian Psychiatric Association.</p>
-    <p>Explore the photographs by day. Select a photograph to view it larger.</p>
+    <p>Explore the photographs by day. Select a photograph to view it larger, or use the download icon to save it.</p>
   </header>
   <nav class="gallery-days" aria-label="Conference days">
     {{ range site.Data.gallery.days }}
@@ -31,6 +31,7 @@
               <img src="{{ $thumb.RelPermalink }}" alt="{{ $caption }}" loading="lazy" decoding="async" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}">
               <span class="gallery-enlarge" aria-hidden="true">View larger ↗</span>
             </a>
+            <a class="gallery-download" href="{{ $photo.RelPermalink }}" download="pam-{{ $day.date }}-{{ path.Base $photo.Name }}" aria-label="Download photograph: {{ $caption }}" title="Download photo"><i class="fas fa-download" aria-hidden="true"></i></a>
           </figure>
         {{ end }}
       </div>
@@ -43,6 +44,7 @@
 <dialog class="gallery-dialog" aria-labelledby="gallery-caption">
   <div class="gallery-toolbar">
     <h2 id="gallery-caption"></h2>
+    <a class="gallery-dialog-download" download hidden><i class="fas fa-download" aria-hidden="true"></i> Download</a>
     <button type="button" class="gallery-close" autofocus>Close</button>
   </div>
   <div class="gallery-stage"><img alt=""></div>
