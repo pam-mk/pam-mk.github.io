@@ -19,8 +19,9 @@
       {{ if $photos }}
       <div class="gallery-grid">
         {{ range $index, $photo := $photos }}
-          {{ $large := $photo.Fit "1600x1600 webp q82" }}
-          {{ $thumb := $photo.Fit "640x640 webp q78" }}
+          {{ $oriented := $photo.Filter images.AutoOrient }}
+          {{ $large := $oriented.Fit "1600x1600 webp q82" }}
+          {{ $thumb := $oriented.Fit "640x640 webp q78" }}
           {{ $caption := printf "%s · Photograph %d" $day.title (add $index 1) }}
           <figure class="gallery-photo">
             <a href="{{ $large.RelPermalink }}" class="gallery-open" data-caption="{{ $caption }}" data-day="{{ $day.date }}" aria-label="View larger: {{ $caption }}">
