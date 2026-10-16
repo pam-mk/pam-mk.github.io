@@ -1,0 +1,47 @@
+{{ if isset .Site.Params "message" }}
+{{ if .Site.Params.message.enable }}
+{{ if isset .Site.Params "message" }}
+<section class="bar background-gray no-mb">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-xl-12 col-sm-12">
+            <div class="col-md-12 col-xl-12 col-sm-12">
+              <p class="lead" style="text-indent: 0em; text-align: center"><em>
+                {{ .Site.Params.message.message | markdownify }}
+                </em>
+              </p>
+                <!--<p>{{.Site.Params.message.organizator | markdownify }}</p> -->
+            </div>
+            <div style="padding: 20px 0px">
+              <div class="row" >
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="margin-top: 20px;">
+            <p class="btn btn-lg btn-primary center-block" style="max-width:85%; min-width: 80%; border-radius: 10px"> 10+ <br> International Speakers</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"  style="margin-top: 20px;">
+          <p class="btn btn-lg btn-primary center-block" style="max-width:85%; min-width: 80%; border-radius: 10px;">200+<br> Participants</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 center-block"  style="margin-top: 20px;">
+            <p class="btn btn-lg btn-primary center-block" style="max-width: 85%; min-width: 80%; border-radius: 10px;"> Location<br> Ohrid, North Macedonia</p>
+        </div>
+        </div>
+        <div class="row" id="conference-resources">
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="margin-top: 20px;">
+            <a class="btn btn-lg btn-primary center-block" style="max-width: 85%; min-width: 80%; border-radius: 10px;" href="{{ "programme/" | relURL }}"><i class="fas fa-calendar-alt" aria-hidden="true"></i><br>Programme</a>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="margin-top: 20px;">
+            <a class="btn btn-lg btn-primary center-block" style="max-width: 85%; min-width: 80%; border-radius: 10px;" href="{{ "book-of-abstracts/" | relURL }}"><i class="fas fa-book-open" aria-hidden="true"></i><br>Book of Abstracts</a>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="margin-top: 20px;">
+            <a class="btn btn-lg btn-primary center-block" style="max-width: 85%; min-width: 80%; border-radius: 10px;" href="{{ "posters/" | relURL }}"><i class="fas fa-images" aria-hidden="true"></i><br>Posters</a>
+          </div>
+        </div>
+        </div>
+
+
+    </div>
+
+    </div>
+</section>
+{{ end }}
+{{ end }}
+{{ end }}
