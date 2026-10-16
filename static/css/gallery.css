@@ -2,9 +2,6 @@
 .gallery-introduction { max-width: 780px; margin: 40px auto; padding: 30px 0; border-top: 1px solid #bc9346; border-bottom: 1px solid #bc9346; }
 .gallery-introduction h1, .gallery-day-heading h2 { font-family: Georgia, serif; text-transform: none; letter-spacing: 0; }
 .gallery-introduction p { line-height: 1.8; }
-.gallery-days { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-bottom: 40px; }
-.gallery-days a { display: block; padding: 20px; background: #f1f4f6; color: #102d44; border-bottom: 2px solid #bc9346; }
-.gallery-days span { display: block; margin-bottom: 6px; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; }
 .gallery-day { margin-bottom: 45px; }
 .gallery-day-heading { scroll-margin-top: 95px; background: #102d44; border-top: 3px solid #bc9346; padding: 28px 32px; color: #fff; }
 .gallery-day-heading .exhibition-eyebrow { color: #efd199; }
@@ -37,8 +34,6 @@
 .gallery-stage img { width: 100%; height: 100%; object-fit: contain; }
 .gallery-counter { white-space: nowrap; font-size: 13px; }
 @media (max-width: 767px) {
-  .gallery-days { grid-template-columns: 1fr; gap: 10px; }
-  .gallery-days a { padding: 14px 18px; }
   .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   .gallery-day-heading { padding: 22px; }
   .gallery-day-heading h2 { font-size: 25px; }

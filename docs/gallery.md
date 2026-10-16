@@ -19,6 +19,6 @@ Days and their order are defined in `data/gallery.json`. To add another day, add
 
 Selecting a photograph opens the viewer. Previous/Next and the left/right arrow keys browse within the selected day. Escape or Close returns to the grid. Without JavaScript, each preview links directly to its larger image.
 
-The blue day headings are native expandable panels, initially open. Click a heading (or use Enter/Space with keyboard focus) to collapse or expand that day. The day navigation opens its target panel, including direct day links.
+The blue day headings are native expandable panels, initially open. Click a heading (or use Enter/Space with keyboard focus) to collapse or expand that day. Direct day links open their target panel.
 
 Grid previews preserve each photograph’s natural proportions without cropping, including landscape and portrait photographs.

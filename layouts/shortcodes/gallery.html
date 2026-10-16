@@ -6,11 +6,6 @@
     <p>Moments from the WPA Co-sponsored International Conference for Forensic Psychiatry, organized by the Macedonian Psychiatric Association.</p>
     <p>Explore the photographs by day. Select a photograph to view it larger, or use the download icon to save it.</p>
   </header>
-  <nav class="gallery-days" aria-label="Conference days">
-    {{ range site.Data.gallery.days }}
-    <a href="#day-{{ .date }}"><span>{{ .label }}</span>{{ .title }}</a>
-    {{ end }}
-  </nav>
   {{ range site.Data.gallery.days }}
     {{ $day := . }}
     {{ $photos := ($.Page.Resources.Match (printf "images/%s/*" .date)).ByType "image" }}

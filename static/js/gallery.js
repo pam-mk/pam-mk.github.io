@@ -8,12 +8,6 @@
   }
   openLinkedDay();
   window.addEventListener('hashchange', openLinkedDay);
-  document.querySelectorAll('.gallery-days a').forEach(function (link) {
-    link.addEventListener('click', function () {
-      var heading = document.getElementById(link.hash.slice(1));
-      if (heading) heading.closest('details').open = true;
-    });
-  });
   var dialog = document.querySelector('.gallery-dialog');
   if (!dialog || typeof dialog.showModal !== 'function') return;
   var links = Array.from(document.querySelectorAll('.gallery-open'));
