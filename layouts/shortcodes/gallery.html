@@ -14,12 +14,13 @@
   {{ range site.Data.gallery.days }}
     {{ $day := . }}
     {{ $photos := ($.Page.Resources.Match (printf "images/%s/*" .date)).ByType "image" }}
-    <section class="gallery-day" aria-labelledby="day-{{ .date }}">
-      <header class="gallery-day-heading" id="day-{{ .date }}">
-        <p class="exhibition-eyebrow">{{ .label }}</p>
+    <details class="gallery-day" open>
+      <summary class="gallery-day-heading" id="day-{{ .date }}">
+        <span class="exhibition-eyebrow">{{ .label }}</span>
         <h2>{{ .title }} 2026</h2>
-        {{ with $photos }}<p>{{ len . }} {{ if eq (len .) 1 }}photograph{{ else }}photographs{{ end }}</p>{{ end }}
-      </header>
+        {{ with $photos }}<span>{{ len . }} {{ if eq (len .) 1 }}photograph{{ else }}photographs{{ end }}</span>{{ end }}
+        <span class="gallery-day-toggle" aria-hidden="true"></span>
+      </summary>
       {{ if $photos }}
       <div class="gallery-grid">
         {{ range $index, $photo := $photos }}
@@ -38,7 +39,7 @@
       {{ else }}
       <p class="gallery-empty">Photographs from this day will be added soon.</p>
       {{ end }}
-    </section>
+    </details>
   {{ end }}
 </div>
 <dialog class="gallery-dialog" aria-labelledby="gallery-caption">

@@ -18,3 +18,5 @@ Hugo generates WebP previews up to 640 × 640 pixels (quality 78) and larger vie
 Days and their order are defined in `data/gallery.json`. To add another day, add a date, title and label there, then add its photographs in the matching folder. Dates are fixed so the albums keep their meaning after the conference. An empty day displays a short message until photographs are available.
 
 Selecting a photograph opens the viewer. Previous/Next and the left/right arrow keys browse within the selected day. Escape or Close returns to the grid. Without JavaScript, each preview links directly to its larger image.
+
+The blue day headings are native expandable panels, initially open. Click a heading (or use Enter/Space with keyboard focus) to collapse or expand that day. The day navigation opens its target panel, including direct day links.
