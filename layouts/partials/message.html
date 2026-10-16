@@ -1,29 +1,12 @@
-{{ if isset .Site.Params "message" }}
-{{ if .Site.Params.message.enable }}
-{{ if isset .Site.Params "message" }}
+{{ if and (isset .Site.Params "message") .Site.Params.message.enable }}
 <section class="bar background-gray no-mb">
-    <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-xl-12 col-sm-12">
-            <div class="col-md-12 col-xl-12 col-sm-12">
-              <p class="lead" style="text-indent: 0em; text-align: center"><em>
-                {{ .Site.Params.message.message | markdownify }}
-                </em>
-              </p>
-                <!--<p>{{.Site.Params.message.organizator | markdownify }}</p> -->
-            </div>
-            <div style="padding: 20px 0px">
-              <div class="row" >
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" style="margin-top: 20px;">
-            <p class="btn btn-lg btn-primary center-block" style="max-width:85%; min-width: 80%; border-radius: 10px"> 10+ <br> International Speakers</p>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4"  style="margin-top: 20px;">
-          <p class="btn btn-lg btn-primary center-block" style="max-width:85%; min-width: 80%; border-radius: 10px;">200+<br> Participants</p>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 center-block"  style="margin-top: 20px;">
-            <p class="btn btn-lg btn-primary center-block" style="max-width: 85%; min-width: 80%; border-radius: 10px;"> Location<br> Ohrid, North Macedonia</p>
-        </div>
-        </div>
+  <div class="container">
+    <div class="conference-highlights">
+      <div class="conference-highlight"><strong>10+</strong><span>International Speakers</span></div>
+      <div class="conference-highlight"><strong>200+</strong><span>Participants</span></div>
+      <div class="conference-highlight"><strong>Location</strong><span>Ohrid, North Macedonia</span></div>
+    </div>
+    <p class="lead conference-message"><em>{{ .Site.Params.message.message | markdownify }}</em></p>
         <div class="row" id="conference-resources">
           <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="margin-top: 20px;">
             <a class="btn btn-lg btn-primary center-block" style="max-width: 85%; min-width: 80%; border-radius: 10px;" href="{{ "programme/" | relURL }}"><i class="fas fa-calendar-alt" aria-hidden="true"></i><br>Programme</a>
@@ -38,13 +21,6 @@
             <a class="btn btn-lg btn-primary center-block" style="max-width: 85%; min-width: 80%; border-radius: 10px;" href="{{ "gallery/" | relURL }}"><i class="fas fa-camera" aria-hidden="true"></i><br>Photo Gallery</a>
           </div>
         </div>
-        </div>
-
-
-    </div>
-
-    </div>
+  </div>
 </section>
-{{ end }}
-{{ end }}
 {{ end }}
