@@ -21,4 +21,4 @@ Selecting a photograph opens the viewer. Previous/Next and the left/right arrow 
 
 The blue day headings are native expandable panels, initially closed. Click a heading (or use Enter/Space with keyboard focus) to collapse or expand that day. Direct day links open their target panel.
 
-Grid previews preserve each photograph’s natural proportions without cropping, including landscape and portrait photographs.
+Grid previews use equal landscape frames (3:2). Portrait photographs fit inside these frames without cropping or stretching. Opening a photograph displays its full natural proportions.

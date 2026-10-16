@@ -16,7 +16,7 @@
 .gallery-dialog-download:hover, .gallery-dialog-download:focus { color: #fff; background: #34566e; }
 .gallery-dialog-download[hidden] { display: none; }
 .gallery-open { display: block; position: relative; background: #f1f4f6; }
-.gallery-open img { display: block; width: 100%; height: auto; }
+.gallery-open img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: contain; }
 .gallery-enlarge { position: absolute; right: 10px; bottom: 10px; padding: 6px 10px; background: #102d44; color: #fff; font-size: 12px; }
 .gallery-open:hover .gallery-enlarge { background: #244c68; }
 .conference-gallery a:focus-visible, .gallery-dialog button:focus-visible, .gallery-dialog a:focus-visible { outline: 3px solid #bc9346; outline-offset: 4px; }
