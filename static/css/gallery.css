@@ -11,7 +11,7 @@
 .gallery-day-heading h2 { color: #fff; margin: 10px 0; font-size: 30px; }
 .gallery-day-heading p:last-child { margin-bottom: 0; }
 .gallery-empty { padding: 28px 32px; background: #f1f4f6; color: #526370; }
-.gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 22px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 22px; align-items: start; }
 .gallery-photo { margin: 0; position: relative; }
 .gallery-download { position: absolute; top: 10px; right: 10px; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border-radius: 4px; background: #102d44; color: #fff; }
 .gallery-download:hover, .gallery-download:focus { color: #fff; background: #244c68; }
@@ -19,7 +19,7 @@
 .gallery-dialog-download:hover, .gallery-dialog-download:focus { color: #fff; background: #34566e; }
 .gallery-dialog-download[hidden] { display: none; }
 .gallery-open { display: block; position: relative; background: #f1f4f6; }
-.gallery-open img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; }
+.gallery-open img { display: block; width: 100%; height: auto; }
 .gallery-enlarge { position: absolute; right: 10px; bottom: 10px; padding: 6px 10px; background: #102d44; color: #fff; font-size: 12px; }
 .gallery-open:hover .gallery-enlarge { background: #244c68; }
 .conference-gallery a:focus-visible, .gallery-dialog button:focus-visible, .gallery-dialog a:focus-visible { outline: 3px solid #bc9346; outline-offset: 4px; }
