@@ -37,6 +37,7 @@
         <p>{{ .description }}</p>
       </header>
       {{ range where $exhibition.posters "group" .id }}
+        {{ $presentation := . }}
         {{ $image := $.Page.Resources.GetMatch .image }}
         {{ if not $image }}{{ errorf "Missing exhibition image: %s" .image }}{{ end }}
         <figure class="conference-poster" id="poster-{{ .id }}">
@@ -53,6 +54,18 @@
             <img src="{{ $image.RelPermalink }}" alt="{{ .title }} — {{ .author }}" loading="lazy" draggable="false" width="{{ $image.Width }}" height="{{ $image.Height }}">
             <div class="conference-poster-watermark" aria-hidden="true"><span>PAM · Conference 2026 · For viewing only</span><span>PAM · Conference 2026 · For viewing only</span><span>PAM · Conference 2026 · For viewing only</span></div>
           </div>
+          {{ range $pageIndex, $filename := .pages }}
+            {{ if gt $pageIndex 0 }}
+              {{ $pageImage := $.Page.Resources.GetMatch $filename }}
+              {{ if not $pageImage }}{{ errorf "Missing exhibition image: %s" $filename }}{{ end }}
+              <p>Page {{ add $pageIndex 1 }} of {{ len $presentation.pages }}</p>
+              <button type="button" class="poster-enlarge" data-poster-src="{{ $pageImage.RelPermalink }}" data-poster-title="{{ $presentation.title }} — page {{ add $pageIndex 1 }}" aria-haspopup="dialog">View larger — page {{ add $pageIndex 1 }}</button>
+              <div class="conference-poster-view">
+                <img src="{{ $pageImage.RelPermalink }}" alt="{{ $presentation.title }} — page {{ add $pageIndex 1 }}" loading="lazy" draggable="false" width="{{ $pageImage.Width }}" height="{{ $pageImage.Height }}">
+                <div class="conference-poster-watermark" aria-hidden="true"><span>PAM · Conference 2026 · For viewing only</span><span>PAM · Conference 2026 · For viewing only</span><span>PAM · Conference 2026 · For viewing only</span></div>
+              </div>
+            {{ end }}
+          {{ end }}
         </figure>
       {{ end }}
     </section>
