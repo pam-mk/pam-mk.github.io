@@ -9,6 +9,7 @@ content/gallery/images/2026-10-15/001.jpg
 content/gallery/images/2026-10-15/002.jpg
 content/gallery/images/2026-10-16/001.jpg
 content/gallery/images/2026-10-17/001.jpg
+content/gallery/images/2026-10-18/001.jpg
 ```
 
 Use JPEG, PNG or WebP files, already oriented correctly. Convert HEIC files before adding them. Sort filenames with zero-padded numbers to control display order. Add new batches to the same day's folder with unique filenames. The gallery automatically includes every image in that folder.

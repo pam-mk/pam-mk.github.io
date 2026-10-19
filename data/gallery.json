@@ -2,6 +2,7 @@
   "days": [
     { "date": "2026-10-15", "title": "Thursday, 15 October", "label": "Day 1" },
     { "date": "2026-10-16", "title": "Friday, 16 October", "label": "Day 2" },
-    { "date": "2026-10-17", "title": "Saturday, 17 October", "label": "Day 3" }
+    { "date": "2026-10-17", "title": "Saturday, 17 October", "label": "Day 3" },
+    { "date": "2026-10-18", "title": "Sunday, 18 October", "label": "Day 4" }
   ]
 }
