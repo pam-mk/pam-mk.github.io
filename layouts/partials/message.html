@@ -1,6 +1,13 @@
 {{ if and (isset .Site.Params "message") .Site.Params.message.enable }}
 <section class="bar background-gray no-mb">
   <div class="container">
+    <div class="president-message-preview">
+      <p class="president-message-label">Message from the President</p>
+      <h2>Together Towards New Achievements</h2>
+      <p>It is with great pleasure and gratitude that I reflect on the successful <strong>WPA Co-Sponsored International Conference for Forensic Psychiatry</strong>, held in Ohrid and organised by the Macedonian Psychiatric Association.</p>
+      <p class="president-message-preview-author">Prof. Dr Antoni Novotni</p>
+      <a class="btn btn-primary" href="{{ "welcome/" | relURL }}">Read the full message</a>
+    </div>
     <div class="conference-highlights">
       <div class="conference-highlight"><strong>10+</strong><span>International Speakers</span></div>
       <div class="conference-highlight"><strong>200+</strong><span>Participants</span></div>

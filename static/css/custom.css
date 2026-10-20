@@ -224,3 +224,21 @@
 @media (max-width: 767px) {
     .conference-highlights { grid-template-columns: 1fr; gap: 14px; padding: 0; }
 }
+
+/* President's letter and homepage introduction. */
+.president-message { max-width: 900px; margin: 0 auto; padding: 0 0 40px; font-size: 18px; line-height: 1.8; }
+.president-message h2 { text-align: center; margin: 10px 0 28px; color: #102d44; }
+.president-message-image { display: block; width: 100%; max-width: 100%; height: auto; margin: 0 auto 32px; border-radius: 8px; }
+.president-message p { margin-bottom: 22px; text-indent: 0; text-align: left; }
+.president-message-signature { margin-top: 32px; }
+.president-message-preview { max-width: 900px; margin: 0 auto 40px; padding: 30px; border-left: 4px solid #bc9346; border-radius: 8px; background: #fff; color: #102d44; text-align: center; }
+.president-message-preview .president-message-label { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; text-indent: 0; }
+.president-message-preview h2 { margin: 12px 0 20px; }
+.president-message-preview p { text-indent: 0; font-size: 18px; line-height: 1.7; }
+.president-message-preview-author { font-weight: 700; margin-top: 18px; }
+@media (max-width: 767px) {
+    .president-message { font-size: 16px; line-height: 1.75; }
+    .president-message h2, .president-message-preview h2 { font-size: 25px; line-height: 1.3; }
+    .president-message-preview { padding: 24px 18px; }
+    .president-message-preview p { font-size: 16px; }
+}

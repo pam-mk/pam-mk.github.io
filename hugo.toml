@@ -41,7 +41,7 @@ pluralizelisttitles = false
     weight     = 2
 
 [[menu.main]]
-    name       = "Welcome Message"
+    name       = "Message from the President"
     identifier = "menu.welcome"
     url        = "/welcome/"
     weight     = 1
