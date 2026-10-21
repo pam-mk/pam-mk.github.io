@@ -1,4 +1,10 @@
 /* your styles go here */
+.testimonials .item .testimonial .name-picture img[src$="/gabriela-novotni.jpg"] {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+}
+
 .conference-posters-cover {
     max-width: 680px;
     margin: 0 auto 3rem;
