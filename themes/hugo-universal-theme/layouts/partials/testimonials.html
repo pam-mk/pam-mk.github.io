@@ -27,7 +27,13 @@
                           <!--<a href="{{ .href }}"> -->
                             <div class="">
                                 <div class="name-picture">
+                                    {{ if eq .id "ignjatova" }}
+                                    <div class="speaker-photo-zoom">
+                                        <img alt="{{ .name }}" src="{{ .avatar | absURL }}">
+                                    </div>
+                                    {{ else }}
                                     <img class="" alt="" src="{{ .avatar | absURL }}">
+                                    {{ end }}
                                     <h4>{{ .name }}</h4>
                                     <p><i>{{ .position }}</i></p>
                                 </div>
