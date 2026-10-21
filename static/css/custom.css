@@ -1,5 +1,6 @@
 /* your styles go here */
-.testimonials .item .testimonial .name-picture img[src$="/gabriela-novotni.jpg"] {
+.testimonials .item .testimonial .name-picture img[src$="/gabriela-novotni.jpg"],
+.testimonials .item .testimonial .name-picture img[src$="/ignjatova-2026.png"] {
     aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: center;
